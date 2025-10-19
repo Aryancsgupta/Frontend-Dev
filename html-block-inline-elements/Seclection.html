@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!-- Dropdown-based Selection Page using only HTML -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Selection</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <h1>Choose Your Travel Preferences</h1>
+    </header>
+
+    <!-- Main content: Dropdown selections -->
+    <main>
+      <form>
+        <!-- Country Dropdown -->
+        <p>
+          <label for="country">Select Country:</label>
+          <select id="country" name="country">
+            <option value="india" selected>India</option>
+            <option value="france">France</option>
+            <option value="japan">Japan</option>
+            <option value="brazil">Brazil</option>
+          </select>
+        </p>
+
+        <!-- State Dropdown -->
+        <p>
+          <label for="state">Select State:</label>
+          <select id="state" name="state">
+            <option value="maharashtra" selected>Maharashtra</option>
+            <option value="karnataka">Karnataka</option>
+            <option value="gujarat">Gujarat</option>
+            <option value="tamilnadu">Tamil Nadu</option>
+          </select>
+        </p>
+
+        <!-- City Dropdown -->
+        <p>
+          <label for="city">Select City:</label>
+          <select id="city" name="city">
+            <option value="mumbai" selected>Mumbai</option>
+            <option value="pune">Pune</option>
+            <option value="nagpur">Nagpur</option>
+            <option value="nashik">Nashik</option>
+          </select>
+        </p>
+
+        <!-- Favorite Tourist Place Dropdown -->
+        <p>
+          <label for="tourist">Favorite Tourist Place:</label>
+          <select id="tourist" name="tourist">
+            <option value="gateway" selected>Gateway of India</option>
+            <option value="marine">Marine Drive</option>
+            <option value="cst">Chhatrapati Shivaji Terminus</option>
+            <option value="elephanta">Elephanta Caves</option>
+          </select>
+        </p>
+      </form>
+
+      <!-- Summary Paragraph -->
+      <p>
+        You have chosen to visit <strong>Gateway of India</strong> in
+        <strong>Mumbai</strong>, <strong>Maharashtra</strong>, <strong>India</strong>.
+      </p>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 TravelSelector. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

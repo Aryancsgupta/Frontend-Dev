@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!-- Course Registration Form using only HTML -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Course Registration Form</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <h1>Course Registration Form</h1>
+      <p>Fill out the form below to register for your preferred course.</p>
+    </header>
+
+    <!-- Registration Form -->
+    <main>
+      <form>
+        <fieldset>
+          <legend>Student Information</legend>
+
+          <!-- Name input -->
+          <p>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required />
+          </p>
+
+          <!-- Email input -->
+          <p>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Course Selection</legend>
+
+          <!-- Dropdown for courses -->
+          <p>
+            <label for="course">Select Course:</label>
+            <select id="course" name="course">
+              <option value="">-- Choose a Course --</option>
+              <option value="webdev">Web Development</option>
+              <option value="datasci">Data Science</option>
+              <option value="dbms">Database Management</option>
+              <option value="ai">Artificial Intelligence</option>
+            </select>
+          </p>
+        </fieldset>
+
+        <!-- Submit button -->
+        <p>
+          <input type="submit" value="Register" />
+          <input type="reset" value="Reset" />
+        </p>
+      </form>
+
+      <!-- Course Schedule Table -->
+      <section>
+        <h2>Available Course Schedules</h2>
+        <table border="1" cellpadding="6" cellspacing="0">
+          <thead>
+            <tr>
+              <th>Course</th>
+              <th>Day</th>
+              <th>Time</th>
+              <th>Instructor</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Web Development</td>
+              <td>Monday & Wednesday</td>
+              <td>10:00 AM - 12:00 PM</td>
+              <td>Mr. Rajesh Sharma</td>
+            </tr>
+            <tr>
+              <td>Data Science</td>
+              <td>Tuesday & Thursday</td>
+              <td>2:00 PM - 4:00 PM</td>
+              <td>Dr. Priya Mehta</td>
+            </tr>
+            <tr>
+              <td>Database Management</td>
+              <td>Wednesday & Friday</td>
+              <td>11:00 AM - 1:00 PM</td>
+              <td>Mr. Amit Verma</td>
+            </tr>
+            <tr>
+              <td>Artificial Intelligence</td>
+              <td>Saturday</td>
+              <td>9:00 AM - 12:00 PM</td>
+              <td>Dr. Neha Kapoor</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 EduLearn Academy. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

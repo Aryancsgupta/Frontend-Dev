@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!-- Product Catalog using only HTML -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Store - Product Catalog</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <h1>Online Store Product Catalog</h1>
+      <p>Find the best products at affordable prices.</p>
+    </header>
+
+    <!-- Product Catalog Table -->
+    <main>
+      <section>
+        <h2>Product List</h2>
+        <table border="1" cellpadding="8" cellspacing="0">
+          <thead>
+            <tr>
+              <th rowspan="2">Image</th>
+              <th rowspan="2">Product Name</th>
+              <th colspan="2">Product Details</th>
+              <th rowspan="2">Availability</th>
+            </tr>
+            <tr>
+              <th>Description</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><img src="laptop.jpg" alt="Laptop" width="100" /></td>
+              <td>Laptop</td>
+              <td>Powerful 16GB RAM, 512GB SSD, and Intel i7 Processor.</td>
+              <td>₹65,000</td>
+              <td>In Stock</td>
+            </tr>
+
+            <tr>
+              <td><img src="phone.jpg" alt="Smartphone" width="100" /></td>
+              <td>Smartphone</td>
+              <td>6.5-inch HD display, 128GB storage, and dual camera.</td>
+              <td>₹18,999</td>
+              <td>In Stock</td>
+            </tr>
+
+            <tr>
+              <td rowspan="2">
+                <img src="headphones.jpg" alt="Headphones" width="100" />
+              </td>
+              <td rowspan="2">Wireless Headphones</td>
+              <td>Noise-cancelling, Bluetooth connectivity, long battery life.</td>
+              <td>₹4,999</td>
+              <td>Out of Stock</td>
+            </tr>
+            <tr>
+              <td colspan="3">Includes carrying case and USB-C charging cable.</td>
+            </tr>
+
+            <tr>
+              <td><img src="watch.jpg" alt="Smartwatch" width="100" /></td>
+              <td>Smartwatch</td>
+              <td>Heart rate monitor, sleep tracker, and step counter.</td>
+              <td>₹7,499</td>
+              <td>In Stock</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 Online Store. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
