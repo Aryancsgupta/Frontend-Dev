@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Paris</title>
+    <style>
+        /* Reset default */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 1rem 2%;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            font-weight: 700;
+        }
+
+        /* Navigation */
+        nav {
+            margin-top: 0.5rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 600;
+            font-size: 1rem;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main content */
+        main {
+            margin-top: 120px; /* leave space for fixed header */
+        }
+
+        section {
+            padding: 5vh 2%;
+            color: white;
+            text-align: center;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        /* Section 1: Parallax with image */
+        #landmarks {
+            background-image: url('https://images.unsplash.com/photo-1522098543979-ffc7f79a16fb?auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed; /* parallax effect */
+            border-bottom: 5px solid #fff;
+        }
+
+        #landmarks h2 {
+            font-size: 3em;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        #landmarks p {
+            font-size: 1.2em;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* Section 2: Linear gradient */
+        #culture {
+            background: linear-gradient(135deg, #e74c3c, #f1c40f);
+            border-bottom: 5px solid #fff;
+        }
+
+        #culture h2 {
+            font-size: 2.5em;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        #culture p {
+            font-size: 1.1em;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* Section 3: Radial gradient with parallax */
+        #food {
+            background: radial-gradient(circle, #1abc9c, #16a085);
+            background-attachment: fixed; /* parallax effect */
+            border-bottom: 5px solid #fff;
+        }
+
+        #food h2 {
+            font-size: 2.5em;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        #food p {
+            font-size: 1.1em;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+       
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            #landmarks h2, #culture h2, #food h2 {
+                font-size: 2em;
+            }
+
+            nav a {
+                display: block;
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header and Navigation -->
+    <header>
+        <h1>Explore Paris</h1>
+        <nav>
+            <a href="#landmarks">Landmarks</a>
+            <a href="#culture">Culture</a>
+            <a href="#food">Food</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Section 1: Landmarks -->
+        <section id="landmarks">
+            <h2>Famous Landmarks</h2>
+            <p>Paris is home to iconic landmarks such as the Eiffel Tower, Notre-Dame Cathedral, and the Louvre Museum. These historic and cultural sites attract millions of visitors each year.</p>
+        </section>
+
+        <!-- Section 2: Culture -->
+        <section id="culture">
+            <h2>Culture & Art</h2>
+            <p>Paris is known as the center of art, fashion, and culture. From exquisite galleries to street performances, the city offers an inspiring cultural experience for all visitors.</p>
+        </section>
+
+        <!-- Section 3: Food -->
+        <section id="food">
+            <h2>Culinary Delights</h2>
+            <p>The city boasts a rich culinary scene, from fresh pastries and cheeses to Michelin-starred restaurants. French cuisine in Paris is a feast for both the eyes and the taste buds.</p>
+        </section>
+    </main>
+
+    
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Complete Webpage Layout</title>
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* Header */
+    header {
+      position: sticky; /* sticky at top */
+      top: 0;
+      background: rgba(51,51,51,0.95);
+      color: #fff;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    header nav a {
+      margin-left: 20px;
+      padding: 5px 10px;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    header nav a:hover {
+      background-color: rgba(255,255,255,0.2);
+    }
+
+    /* Hero Section */
+    .hero {
+      position: relative;
+      height: 80vh;
+      background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://via.placeholder.com/1200x600') center/cover no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 3em;
+      padding: 20px;
+      background: rgba(0,0,0,0.5);
+      border-radius: 10px;
+    }
+
+    /* About Section */
+    .about {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      padding: 60px 30px;
+      gap: 30px;
+      background: #f4f4f4;
+    }
+
+    .about img {
+      flex: 1 1 300px;
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .about .text {
+      flex: 1 1 400px;
+      padding: 20px;
+    }
+
+    /* Services Section */
+    .services {
+      padding: 60px 30px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: space-between;
+      background: #fff;
+    }
+
+    .service-box {
+      flex: 1 1 30%;
+      padding: 20px;
+      background: linear-gradient(135deg, #4CAF50, #66BB6A);
+      color: #fff;
+      text-align: center;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .service-box:hover {
+      transform: translateY(-10px);
+    }
+
+    /* Contact Section */
+    .contact {
+      padding: 60px 30px;
+      background: #f4f4f4;
+    }
+
+    .contact form {
+      max-width: 500px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      padding: 20px;
+      background: rgba(255,255,255,0.9);
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .contact input, .contact textarea, .contact button {
+      padding: 12px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      outline: none;
+      font-size: 1em;
+    }
+
+    .contact input:focus, .contact textarea:focus {
+      border-color: #4CAF50;
+    }
+
+    .contact button {
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .contact button:hover {
+      background-color: #45a049;
+    }
+
+    /* Footer */
+    footer {
+      padding: 20px;
+      text-align: center;
+      background: #333;
+      color: #fff;
+      border-top: 5px solid #4CAF50;
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .about {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .services {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .service-box {
+        width: 80%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">MyWebsite</div>
+    <nav>
+      <a href="#hero">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <h1>Welcome to My Website</h1>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <img src="data:image/jpeg;base64,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" alt="About Image">
+    <div class="text">
+      <h2>About Us</h2>
+      <p>We are a team of passionate developers delivering high-quality web solutions. Our goal is to create engaging, responsive, and visually appealing websites tailored to your needs.</p>
+      <p>With experience in modern web technologies, we provide end-to-end services from design to deployment, ensuring a seamless digital experience for your users.</p>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services" id="services">
+    <div class="service-box">
+      <h3>Web Design</h3>
+      <p>Creative and responsive web designs to engage your audience.</p>
+    </div>
+    <div class="service-box">
+      <h3>Development</h3>

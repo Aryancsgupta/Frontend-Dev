@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Layout</title>
+  <style>
+    /* Basic styling */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f8;
+    }
+
+    /* Fixed Header */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 15px 0;
+      font-size: 1.5em;
+      z-index: 1000;
+    }
+
+    /* Layout container */
+    .dashboard {
+      display: flex;
+      margin-top: 70px; /* space for fixed header */
+      min-height: calc(100vh - 70px);
+    }
+
+    /* Sidebar */
+    .sidebar {
+      width: 220px;
+      background-color: #222;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      padding-top: 20px;
+      position: relative;
+    }
+
+    .sidebar a {
+      color: #ddd;
+      text-decoration: none;
+      padding: 12px 20px;
+      display: block;
+      transition: background 0.3s;
+    }
+
+    .sidebar a:hover {
+      background-color: #444;
+    }
+
+    /* Main content area */
+    .main-content {
+      flex: 1;
+      padding: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: space-evenly;
+    }
+
+    /* Content boxes */
+    .content-box {
+      background-color: #fff;
+      flex: 1 1 45%;
+      min-width: 300px;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .content-box h2 {
+      margin-top: 0;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .dashboard {
+        flex-direction: column;
+      }
+
+      .sidebar {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+
+      .main-content {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .content-box {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    My Dashboard
+  </header>
+
+  <div class="dashboard">
+    <nav class="sidebar">
+      <a href="#">Home</a>
+      <a href="#">Analytics</a>
+      <a href="#">Reports</a>
+      <a href="#">Settings</a>
+    </nav>
+
+    <main class="main-content">
+      <div class="content-box">
+        <h2>Overview</h2>
+        <p>This section contains general statistics and key performance metrics.</p>
+      </div>
+      <div class="content-box">
+        <h2>Activity</h2>
+        <p>Displays recent activities, updates, and data visualizations.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

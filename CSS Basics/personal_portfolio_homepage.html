@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aryan Gupta Portfolio</title>
+    <style>
+        /* Reset default margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff; /* light custom background */
+            color: #333; /* readable text color */
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Header */
+        header {
+            position: fixed; /* fixed at top */
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #4CAF50; /* custom background */
+            color: white;
+            padding: 1rem; /* using rem unit */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        header h1 {
+            font-size: 2em; /* em unit */
+        }
+
+        nav a {
+            margin-left: 20px; /* px unit */
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 1rem;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main section */
+        main {
+            flex: 1;
+            padding: 6rem 2%; /* padding using % and vh */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        main img {
+            width: 200px; /* px unit */
+            height: 200px; /* px unit */
+            border-radius: 50%;
+            margin-bottom: 1.5rem;
+        }
+
+        main p {
+            max-width: 600px;
+            font-size: 1.1rem;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <!-- Header with name and navigation -->
+    <header>
+        <h1>Aryan Gupta</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Main content -->
+    <main>
+        <img src="https://via.placeholder.com/200" alt="Profile Image">
+        <p>Hello! I am Aryan Gupta, a passionate web developer and student. I enjoy creating interactive web applications, learning new technologies, and exploring programming challenges. This portfolio showcases my projects, skills, and interests.</p>
+    </main>
+
+    
+</body>
+</html>
