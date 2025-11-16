@@ -1,0 +1,12 @@
+/* ===== Custom Styling for Personal Portfolio ===== */
+
+/* Profile image hover effect */
+img:hover {
+  transform: scale(1.05);
+  transition: 0.3s ease;
+}
+
+/* Contact form section shadow */
+section {
+  border: 1px solid #dee2e6;
+}
