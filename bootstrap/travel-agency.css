@@ -1,0 +1,27 @@
+/* ===== Custom Styling for Travel Agency Showcase ===== */
+
+/* Add smooth transitions on carousel images */
+.carousel-item img {
+  height: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Caption background for better visibility */
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+/* Footer styling */
+footer {
+  letter-spacing: 0.5px;
+}
+
+/* Responsive image height adjustment */
+@media (max-width: 768px) {
+  .carousel-item img {
+    height: 300px;
+  }
+}
