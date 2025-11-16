@@ -1,0 +1,14 @@
+/* ===== Custom Styling for Task Tracker ===== */
+
+/* Smooth hover on task list */
+.list-group-item:hover {
+  background-color: #f8f9fa;
+  transform: scale(1.01);
+  transition: all 0.3s ease;
+}
+
+/* Button hover effect */
+.btn:hover {
+  transform: scale(1.05);
+  transition: 0.3s ease;
+}
