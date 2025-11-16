@@ -1,0 +1,18 @@
+/* ===== Custom Styling for Notifications Dashboard ===== */
+
+/* Add subtle background gradient */
+body {
+  background: linear-gradient(to bottom right, #f8f9fa, #e9ecef);
+}
+
+/* Custom styling for the summary well */
+section.bg-light {
+  border-left: 5px solid #0d6efd;
+}
+
+/* Add hover glow to alerts */
+.alert:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: scale(1.01);
+  transition: all 0.3s ease;
+}
