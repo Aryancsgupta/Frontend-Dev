@@ -1,0 +1,26 @@
+/* ===== Custom Theme for Blog Homepage ===== */
+
+/* Override Bootstrap primary color and font */
+:root {
+  --bs-primary: #6f42c1; /* Custom purple tone */
+  --bs-font-sans-serif: 'Poppins', sans-serif;
+}
+
+/* General font style */
+body {
+  font-family: var(--bs-font-sans-serif);
+  background-color: #f8f9fa;
+}
+
+/* Card hover effect */
+.card:hover {
+  transform: translateY(-5px);
+  transition: all 0.3s ease;
+}
+
+/* Customize Read More button */
+.btn-outline-primary:hover {
+  background-color: var(--bs-primary);
+  color: white;
+  transition: 0.3s;
+}
