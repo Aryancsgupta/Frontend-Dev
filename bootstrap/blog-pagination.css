@@ -1,0 +1,22 @@
+/* ===== Custom Styling for Blog Pagination ===== */
+
+/* Smooth hover effect on buttons */
+.btn-outline-secondary:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+/* Blog heading spacing */
+article h2 {
+  color: #0d6efd;
+}
+
+/* Pagination styling */
+.pagination .page-link {
+  color: #0d6efd;
+}
+
+.pagination .page-link:hover {
+  background-color: #0d6efd;
+  color: white;
+}
