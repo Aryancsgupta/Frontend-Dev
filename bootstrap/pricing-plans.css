@@ -1,0 +1,23 @@
+/* ===== Custom Styling for Pricing Plans ===== */
+
+/* Smooth hover effect for all cards */
+.plan-card {
+  transition: all 0.3s ease;
+  border-radius: 1rem;
+}
+
+.plan-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+/* Highlight Pro plan */
+.pro-plan {
+  border: 3px solid white;
+}
+
+/* Card price styling */
+.card-price {
+  font-size: 2.5rem;
+  margin: 10px 0;
+}
