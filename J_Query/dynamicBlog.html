@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dynamic Blog Posts</title>
+
+    <style>
+        .post {
+            padding: 12px;
+            border: 1px solid #ccc;
+            margin: 10px 0;
+        }
+
+        .highlight {
+            background: #fff3b0;
+        }
+
+        .tag {
+            background: #d1e7ff;
+            padding: 4px 8px;
+            display: inline-block;
+            margin-right: 6px;
+            border-radius: 4px;
+        }
+
+        button {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Blog Manager</h1>
+
+    <button id="addPost">Add New Post</button>
+    <button id="addFeatured">Add Featured Post</button>
+    <button id="removeLast">Remove Last Post</button>
+    <button id="highlightKeyword">Highlight 'JavaScript'</button>
+
+    <div id="posts">
+
+        <div class="post">
+            <h3>Learning JavaScript Basics</h3>
+            <p>JavaScript is essential for web developers.</p>
+        </div>
+
+        <div class="post">
+            <h3>Why HTML5 Matters</h3>
+            <p>Modern structure for modern websites.</p>
+        </div>
+
+        <div class="post">
+            <h3>Introduction to CSS</h3>
+            <p>Make your website beautiful with styling.</p>
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="dynamicBlog.js"></script>
+</body>
+</html>
