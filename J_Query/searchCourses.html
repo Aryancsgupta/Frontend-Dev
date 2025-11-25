@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search Courses</title>
+
+    <style>
+        .course {
+            padding: 10px;
+            border: 1px solid #ccc;
+            margin: 6px 0;
+        }
+
+        .highlight {
+            background: yellow;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Search Courses</h1>
+
+    <input type="text" id="searchBox" placeholder="Search for a course...">
+    <button id="clearBtn">Clear</button>
+
+    <h3>Matched Courses: <span id="count">0</span></h3>
+
+    <div id="courseList">
+        <div class="course">Web Development</div>
+        <div class="course">Data Structures</div>
+        <div class="course">Operating Systems</div>
+        <div class="course">Machine Learning</div>
+        <div class="course">Database Management</div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="searchCoursses.js"></script>
+</body>
+</html>
