@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event Subscription Panel</title>
+
+    <style>
+        .topic {
+            padding: 10px;
+            border: 1px solid #ccc;
+            margin: 6px 0;
+            cursor: pointer;
+        }
+
+        .subscribed {
+            background: #c8e6c9;
+        }
+
+        #success {
+            margin-top: 15px;
+            padding: 10px;
+            display: none;
+            background: #d1f7d1;
+            border: 1px solid green;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Subscription Panel</h1>
+
+    <button id="subscribeBtn">Subscribe</button>
+    <button id="unsubscribeBtn">Unsubscribe</button>
+
+    <h3>Available Topics</h3>
+
+    <div id="topics">
+        <div class="topic">Sports</div>
+        <div class="topic">Technology</div>
+        <div class="topic">Health</div>
+    </div>
+
+    <br>
+
+    <input type="text" id="newTopicText" placeholder="New Topic Name">
+    <button id="addTopic">Add Topic</button>
+
+    <button id="removeTopic">Remove 'Health'</button>
+
+    <div id="success"></div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="eventSubscription.js"></script>
+</body>
+</html>
