@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Form Validation</title>
+
+    <style>
+        .error {
+            color: red;
+            font-size: 14px;
+        }
+        input.invalid {
+            border: 2px solid red;
+        }
+        input.valid {
+            border: 2px solid green;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Login Form</h2>
+
+    <form id="loginForm">
+        <label>Username:</label><br>
+        <input type="text" id="username"><br>
+        <small class="error" id="userErr"></small><br>
+
+        <label>Password:</label><br>
+        <input type="password" id="password"><br>
+        <small class="error" id="passErr"></small><br>
+
+        <button type="submit">Login</button>
+    </form>
+
+    <h3 id="result"></h3>
+
+    <script src="LoginForm.js"></script>
+</body>
+</html>
