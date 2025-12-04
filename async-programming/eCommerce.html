@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shopping Cart (Combined File)</title>
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <style>
+        .item { margin-bottom: 15px; }
+        button { margin-right: 10px; }
+        #empty-message { color: red; display: none; }
+    </style>
+</head>
+
+<body>
+
+    <h1>Shopping Cart</h1>
+
+    <div class="items">
+
+        <div class="item">
+            <p>Item 1 - ₹100</p>
+            <button class="add">Add</button>
+            <button class="remove">Remove</button>
+        </div>
+
+        <div class="item">
+            <p>Item 2 - ₹200</p>
+            <button class="add">Add</button>
+            <button class="remove">Remove</button>
+        </div>
+
+        <div class="item">
+            <p>Item 3 - ₹300</p>
+            <button class="add">Add</button>
+            <button class="remove">Remove</button>
+        </div>
+
+        <div class="item">
+            <p>Item 4 - ₹400</p>
+            <button class="add">Add</button>
+            <button class="remove">Remove</button>
+        </div>
+
+        <div class="item">
+            <p>Item 5 - ₹500</p>
+            <button class="add">Add</button>
+            <button class="remove">Remove</button>
+        </div>
+
+    </div>
+
+    <h2>Total Items: <span id="count">0</span></h2>
+    <h2>Total Price: ₹<span id="price">0</span></h2>
+
+    <p id="empty-message">Your cart is empty!</p>
+
+    <script>
+        // Total counters
+        let totalCount = 0;
+        let totalPrice = 0;
+
+        // Price list for the 5 items (in index order)
+        const prices = [100, 200, 300, 400, 500];
+
+        // Add button logic
+        $(".add").each(function (index) {
+            $(this).click(function () {
+                totalCount++;
+                totalPrice += prices[index];
+                updateCart();
+            });
+        });
+
+        // Remove button logic
+        $(".remove").each(function (index) {
+            $(this).click(function () {
+                if (totalCount > 0 && totalPrice >= prices[index]) {
+                    totalCount--;
+                    totalPrice -= prices[index];
+                }
+                updateCart();
+            });
+        });
+
+        // Update the UI
+        function updateCart() {
+            $("#count").text(totalCount);
+            $("#price").text(totalPrice);
+
+            // Show/hide empty message
+            if (totalCount === 0) {
+                $("#empty-message").fadeIn();
+            } else {
+                $("#empty-message").fadeOut();
+            }
+        }
+    </script>
+
+</body>
+</html>
