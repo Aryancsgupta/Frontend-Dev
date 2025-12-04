@@ -1,0 +1,68 @@
+/* Common Layout */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  transition: background 0.3s, color 0.3s;
+  padding: 40px;
+}
+
+.container {
+  max-width: 500px;
+  padding: 20px;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.4);
+  backdrop-filter: blur(8px);
+}
+
+h2 {
+  margin-bottom: 15px;
+}
+
+.btn-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.theme-btn {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.info {
+  font-size: 18px;
+}
+
+/* ---------------- THEME STYLES ---------------- */
+
+/* Light */
+body[data-theme="light"] {
+  background: #f5f5f5;
+  color: #222;
+}
+body[data-theme="light"] .theme-btn[data-theme="light"] {
+  background: #ddd;
+}
+
+/* Dark */
+body[data-theme="dark"] {
+  background: #1c1c1c;
+  color: #f2f2f2;
+}
+body[data-theme="dark"] .theme-btn[data-theme="dark"] {
+  background: #444;
+  color: white;
+}
+
+/* Blue */
+body[data-theme="blue"] {
+  background: #0d2a52;
+  color: #eaf2ff;
+}
+body[data-theme="blue"] .theme-btn[data-theme="blue"] {
+  background: #1b4f8c;
+  color: white;
+}
