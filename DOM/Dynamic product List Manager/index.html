@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Product List Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Product List Manager</h1>
+
+    <section class="add-section">
+      <input id="productInput" type="text" placeholder="Enter product name..." />
+      <button id="addBtn">Add Product</button>
+    </section>
+
+    <section class="list-section">
+      <ul id="productList" aria-live="polite"></ul>
+      <p id="emptyHint" class="hint">No products yet — add one above.</p>
+    </section>
+  </main>
+
+  <script src="product-manager.js"></script>
+</body>
+</html>
